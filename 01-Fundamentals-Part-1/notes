@@ -1,0 +1,54 @@
+HTML + CSS + JS = Noun + Verb + Adjective
+HTML = what is on the page
+CSS = what it looks like
+JS = what it does
+
+Modern JS frameworks/libraries
+Ex: React, Angular, Vue
+- make building large scale apps easier/faster
+- all 100% based on JS
+
+JS and web browser are 2 different things
+- JS can be used outside of the web browser
+- JS can be used on a web server. Ex: node.js
+  - helps us build back end apps
+    - runs on web server
+    - interacts with databases
+- JS on the browser are front end apps
+
+JS Native mobile/desktop apps
+- uses native components instead of web components as building blocks
+- Mobile: React Native, Ionic
+- Desktop: Electron
+
+ES6
+- stands for ECMAScript
+- came out in 2015. Biggest update for JS ever
+
+Naming
+- variable cannot start with a number
+  - Ex: 3years will throw error in the console
+- variables can only contain numbers, letters, _ or $
+- cannot be the same as reserved keywords
+  - Ex: function, new
+  - can be worked around by adding $ or _ before it. $function
+  - 'name' is allowed but advised against. Use things like firstName, etc
+- do not start var/let/const names with uppercase letter 
+- all caps variable names are reserved for variables that never change
+  - Ex: let PI = 3.1415; 
+- be specific with your variable names. myFirstJob vs job1. the first one is better because it is more specific
+
+Data Types
+ - every value is either an object or a primitive
+  - a primitive is everything but an object
+ - 7 Primitive Data Types
+    1. Number
+    2. Strings - sequence of characters. wrapped in single or double quotes
+    3. Boolean - true or false value
+    4. undefined - value taken by a variable that is not defined. empty value
+    5. null - also empty value
+    6. Symbol - value that is unique and cannot be changed
+    7. BigInt - larger integers that the number type cant hold
+- dynamic typing - in js, you dont have to manually define the data type of the value within a variable. Data types are auto determined
+- value has the type, not the variable
+- empty variables hold undefined type/value
