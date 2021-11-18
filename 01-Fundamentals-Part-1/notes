@@ -52,3 +52,18 @@ Data Types
 - dynamic typing - in js, you dont have to manually define the data type of the value within a variable. Data types are auto determined
 - value has the type, not the variable
 - empty variables hold undefined type/value
+
+Declaring variables
+- let, const, var
+- var is older. let and const are used more post ES6
+- const cannot be changed. immutable. also requires initial value. cannot be defined without value like let.
+- const is recommended most of the time.
+
+Operators 
+- ** = power of. Ex: 2 ** 3 is 2 to the power of 3. 8
+- +=, -=, *=, /= takes operateor and includes it into already defined variable.
+  - Ex: x = 10;
+        x += 5; translates to x = x + 5. equals 15
+        x++ is x = x + 1
+        x-- is x = x - 1
+- js has a order of operations. (order precedence)
