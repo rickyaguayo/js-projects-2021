@@ -10,8 +10,6 @@ age = 30;
 const birthYear = 1991;
 birthYear = 1990; 
 
-*/
-
 // math operators
 const now = 2037;
 const ageRicky = now - 1992;
@@ -37,3 +35,15 @@ console.log(ageMonica >= 18)
 
 const averageAge = (ageMonica + ageRicky) / 2;
 console.log(averageAge);
+
+*/
+
+const age = 24;
+// const oldEnough = age >= 16;
+
+if (age >= 16) {
+  console.log('Old enough to drive');
+} else {
+  const yearsLeft = 16 - age;
+  console.log(`Still have ${yearsLeft} year(s) before you can drive`);
+}
