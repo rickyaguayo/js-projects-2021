@@ -22,7 +22,7 @@ console.log(typeof year)
 
 year = 1991;
 console.log(typeof year)
-*/
+
 
 // let markHeight = 1.69;
 // let markWeight = 78;
@@ -41,3 +41,17 @@ const markHigherBMI = markBMI > johnBMI;
 console.log(markBMI, johnBMI, markHigherBMI);
 // console.log(johnBMI);
 // console.log(markHigherBMI);
+
+const firstName = 'Ricky';
+const job = 'developer';
+const birthYear = 1992;
+const currentYear = 2037;
+
+const ricky = "I'm " + firstName + ', a ' + (currentYear - birthYear) + ' year old ' + job + '!';
+
+console.log(ricky);
+
+const rickyNew = `I'm ${firstName} a ${currentYear - birthYear} year old ${job}!`;
+console.log(rickyNew);
+
+*/
