@@ -36,8 +36,6 @@ console.log(ageMonica >= 18)
 const averageAge = (ageMonica + ageRicky) / 2;
 console.log(averageAge);
 
-*/
-
 const age = 24;
 // const oldEnough = age >= 16;
 
@@ -47,3 +45,5 @@ if (age >= 16) {
   const yearsLeft = 16 - age;
   console.log(`Still have ${yearsLeft} year(s) before you can drive`);
 }
+
+*/

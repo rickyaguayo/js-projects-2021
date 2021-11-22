@@ -23,16 +23,18 @@ console.log(typeof year)
 year = 1991;
 console.log(typeof year)
 
+*/
 
-// let markHeight = 1.69;
-// let markWeight = 78;
-// let johnHeight = 1.95;
-// let johnWeight = 92;
 
-let markHeight = 1.88;
-let markWeight = 95;
-let johnHeight = 1.76;
-let johnWeight = 85;
+let markHeight = 1.69;
+let markWeight = 78;
+let johnHeight = 1.95;
+let johnWeight = 92;
+
+// let markHeight = 1.88;
+// let markWeight = 95;
+// let johnHeight = 1.76;
+// let johnWeight = 85;
 
 const markBMI = markWeight / markHeight ** 2;
 const johnBMI = johnWeight / johnHeight ** 2;
@@ -41,6 +43,16 @@ const markHigherBMI = markBMI > johnBMI;
 console.log(markBMI, johnBMI, markHigherBMI);
 // console.log(johnBMI);
 // console.log(markHigherBMI);
+
+if (markBMI > johnBMI) {
+  // console.log("Mark's BMI is higher than John's!");
+  console.log(`Mark's BMI ${markBMI} is higher than John's ${johnBMI}!`);
+} else {
+  // console.log("John's BMI is higher than Mark's!");
+  console.log(`John's BMI ${johnBMI} is higher than Mark's ${markBMI}!`);
+}
+
+/*
 
 const firstName = 'Ricky';
 const job = 'developer';
