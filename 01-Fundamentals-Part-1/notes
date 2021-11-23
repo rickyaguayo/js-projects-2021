@@ -80,5 +80,62 @@ Template literals
   - used to have to use /n/ within quotes.
   - helpful for writing HTML in js
 
-  Control structure - if/else statements
+Control structure - if/else statements
   - allows control on how code is executed
+
+Type Conversion -  manually convert from one type to another
+  - JS can only convert to a number, to a string or to a Boolean
+    - Number()
+    - String()
+    - Boolean()
+
+Type Coercion - when js automatically convert types
+  - Plus (+) operator can convert numbers to strings
+    - Ex: console.log("I'm " + 29 + " years old")
+      = "I'm 29 years old"
+    - 29 turns into "29"
+    - ('23' * '2') = 46
+    - ('23' / '2') = 11.5
+
+- Minus (-), multiply (*), and divide (/) operators can convert string to number
+  - Ex: console.log("23" - "10" - 3)
+    = 10
+  - "23" - "10" turns into 23 - 10
+  - "23" * "2" = 46
+  - "23" / "2" = 11.5
+
+Truthy vs Falsy
+- Falsy - values that arent actually false, but will become false when converted to boolean
+  - JS has 5 falsy values:
+    1. 0
+    2. ''
+    3. undefined
+    4. null
+    5. NaN
+
+- Truthy - values that arent actually true, but will become true when converted to boolean
+  Ex: any number that isnt 0, a string that isnt empty
+
+- In conditional statements, js will try to convert the logic into boolean. (script.js line 60)
+
+- Equal operators (script.js line 76)
+  - === - strict quality operator. does not perform type coercion. returns boolean
+  Ex: 18 === 18 = true. 19 === '19' = false. 19 === 18 = false
+   opposite is !==
+  - == - loose quality operator. does perform typer coercion. returns boolean 
+  Ex: 18 == 18 = true. 19 == '19' = true. 19 == 18 = false
+    - avoid using loose operator as much as possible
+    - opposite is !=
+
+- prompt() - opens up alert with input on page load and creates value (as a string) from input
+
+- and (&&) operator - true when all are true. "Sarah has a license and good vision"
+- or (||) operator - true when one is true. "Sarah has a license or good vision
+- not (!) operator - inverts true to false and vis versa. 
+  - this has precedence over and/or operators. 
+  - not will invert the boolean before running any and/or operators that may be along with it
+  Ex: a = false, b = true
+      !a and b = true 
+
+
+  
