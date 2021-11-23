@@ -46,4 +46,68 @@ if (age >= 16) {
   console.log(`Still have ${yearsLeft} year(s) before you can drive`);
 }
 
+// type conversion
+const inputYear = "1991";
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Ricky"));
+console.log(typeof Number("Ricky"));
+
+// type coercion
+console.log("I'm " + 29 + " years old");
+
+const money = 0;
+if (money) {
+  console.log("Nice!");
+} else {
+  console.log("Job?");
+}
+
+let height = 123;
+console.log(height);
+
+if (height) {
+  console.log("Height defined");
+} else {
+  console.log("Height undefined");
+}
+
+const age = 19;
+if (age === 18) console.log("you are 18");
+//if the if statement is just one line, you can omit the curly braces
+
+const favNum = Number(prompt("whats your favorite number"));
+console.log(favNum); //typeof is string
+
+if (favNum === 11) {
+  console.log("Great number!");
+} else if (favNum === 2) {
+  console.log("another great number");
+} else {
+  console.log("pick better numbers");
+}
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log("Sarah is able to drive.");
+// } else {
+//   console.log("Someone else should drive.");
+// }
+
+const isTired = false;
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive.");
+} else {
+  console.log("Someone else should drive.");
+}
+
 */
