@@ -61,8 +61,6 @@ console.log(ricky);
 const rickyNew = `I'm ${firstName} a ${currentYear - birthYear} year old ${job}!`;
 console.log(rickyNew);
 
-*/
-
 // const dolphinsAverage = (97 + 112 + 101) / 3;
 // const koalasAverage = (109 + 95 + 123) / 3;
 
@@ -110,3 +108,18 @@ if (dolphinsAverage > koalasAverage && dolphinsAverage >= 100) {
 } else {
   console.log("no one wins");
 }
+
+*/
+
+// MY WAY
+// const bill = 430;
+// let tip;
+
+// bill >= 50 && bill <= 300 ? tip = bill * .15 : tip = bill * .2;
+// const total = bill + tip;
+
+// JONAS' WAY
+const bill = 430;
+const tip = bill >= 50 && bill <= 300 ? bill * .15 : bill * .2;
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tip}`)
