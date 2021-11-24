@@ -110,4 +110,51 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
   console.log("Someone else should drive.");
 }
 
+const day = 'sunday';
+
+// switch (day) {
+//   case 'monday': //day === 'monday'
+//     console.log('Get ready for work');
+//     console.log('Go to work');
+//     break;
+//   case 'tuesday':
+//     console.log('get tacos');
+//     break;
+//   case 'wednesday':
+//   case 'thursday':
+//     console.log('almost the weekend');
+//     break;
+//   case 'friday':
+//     console.log('its the weekend');
+//     break;
+//   case 'saturday':
+//   case 'sunday':
+//     console.log('enjoy the weekend');
+//     break;
+//   default:
+//     console.log('not a valid day');
+// }
+
+if (day === 'monday') {
+  console.log('Get ready for work');
+  console.log('Go to work');
+} else if (day === 'tuesday') {
+  console.log('get tacos');
+} else if (day === 'wednesday' || day === 'thursday') {
+  console.log('almost the weekend');
+} else if (day === 'friday') {
+  console.log('its the weekend');
+} else if (day === 'saturday' || day === 'sunday') {
+  console.log('enjoy the weekend');
+} else {
+  console.log('not a valid day')
+}
+
+const age = 29;
+
+// age >= 30 ? console.log('you old') : console.log('not old yet');
+
+const areYouOld = age >= 30 ? 'you old' : 'not old yet';
+console.log(areYouOld);
+
 */
