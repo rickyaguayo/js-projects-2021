@@ -1,0 +1,30 @@
+strict mode
+- written at the top of js file. 'use strict';
+- helps make the js cleaner and secure code
+- helps devs avoid bugs
+- forbids certain actions
+- makes errors visible
+- adds reserved words that will throw errors if you try to use them
+
+Functions -
+- input data -> transform data -> output data
+- allows us to create reusable code 
+- names and parameters optional
+- can only be ran when called/ran/invoked. logger();
+- return helps produce the result of the function so that it can be used elsewhere in the code. return is optional
+- return causes you to jump out of function
+- functions are values. can be stored in variables
+
+- function declarations (script.js line 10) use function keyword to declare a function (like variables)
+  - these can be called before the function is declared in the code (hoisting)
+
+- function expression (script.js line 30) is a function value stored in a variable
+  - this usually is an anonymous(without a name) function stored in a variable
+  - cannot be called before the function in the code. (hoisting)
+
+- arrow functions (script.js line 38)
+  - short hand for function expressions
+  - return is implicit in arrow functions. but if there is more than one line of code, you will need to put return
+  - curly braces are optional depending on length of code block within function 
+  - helpful for writing short one line functions. (dont need return here)
+  - arrow functions do not get the this keyword.
