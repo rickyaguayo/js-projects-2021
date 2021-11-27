@@ -70,8 +70,8 @@ Operators
 
 Template literals
 - can assemble multiple pieces into one string
-- allows you to write in a normal ways then injects variable to create a string
-- defined by back ticks (``) and variable are defined using ${}. Ex: `my name is ${name}`
+- allows you to write in a normal way then injects variable to create a string
+- defined by back ticks (``) and variable are defined using ${}. Ex: `my name is ${firstName}`
 - back ticks (``) can also be used for strings along with single/double quotes
 - can be used for multi line strings
   - Ex: `multi
@@ -83,6 +83,7 @@ Template literals
 
 Control structure - if/else statements
   - allows control on how code is executed
+  - if/else can be used in one line. (line 77)
 
 Type Conversion -  manually convert from one type to another
   - JS can only convert to a number, to a string or to a Boolean
@@ -96,12 +97,12 @@ Type Coercion - when js automatically convert types
       = "I'm 29 years old"
     - 29 turns into "29"
 
-- Minus (-), multiply (*), and divide (/) operators can convert string to number
-  - Ex: console.log("23" - "10" - 3)
-    = 10
-  - "23" - "10" turns into 23 - 10
-  - "23" * "2" = 46
-  - "23" / "2" = 11.5
+  - Minus (-), multiply (*), and divide (/) operators can convert string to number
+    - Ex: console.log("23" - "10" - 3)
+      = 10
+    - "23" - "10" turns into 23 - 10
+    - "23" * "2" = 46
+    - "23" / "2" = 11.5
 
 Truthy vs Falsy
 - Falsy - values that arent actually false, but will become false when converted to boolean
