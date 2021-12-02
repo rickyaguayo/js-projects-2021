@@ -84,4 +84,51 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 console.log(yearsUntilRetirement(1992, 'Ricky'));
 console.log(yearsUntilRetirement(1960, 'Mother'));
 
+// ARRAYS
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay'; // replaces friends[2] (Peter) with Jay
+console.log(friends);
+
+const firstName = 'Ricky';
+
+const ricky = [firstName, 'Aguayo', 2021 - 1992, 'developer', friends]
+console.log(ricky);
+console.log(ricky.length);
+
+const calcAge2 = function (birthYear) {
+  return 2040 - birthYear;
+}
+
+const years = [1991, 1992, 1996, 2010];
+
+const age1 = calcAge2(years[0]);
+const age2 = calcAge2(years[1]);
+const age3 = calcAge2(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge2(years[0]), calcAge2(years[1]), calcAge2(years[years.length - 1])];
+console.log(ages);
+
+const friends = ['Michael', 'Steven', 'Peter'];
+
+// ADDS ELEMENTS
+friends.push('Jay'); // adds to end of array
+friends.unshift('John'); // adds to beginning of array
+
+// REMOVES ELEMENTS
+friends.pop(); // removes last element
+friends.shift(); // removes first element
+
+console.log(friends.indexOf('Steven'));
+
+console.log(friends.includes('Steven')); // useful in functions
+if (friends.includes('Peter')) console.log('Peter is here');
+
+console.log(friends);
+
 */

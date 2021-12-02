@@ -36,4 +36,33 @@ const checkWinnerJ = function (avgDolphins, avgKoalas) {
 
 checkWinnerJ(dolphinAvg, koalaAvg);
 
+// CODING CHALLENG #2
+
+const bills = [125, 555, 44];
+
+// MY WAY
+const calcTip = function (bill) {
+  if (bill >= 50 && bill <= 300) {
+    return bill * .15;
+  } else {
+    return bill * .2;
+  }
+}
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[bills.length - 1])];
+// console.log(tips);
+
+const totals = [bills[0] + calcTip(bills[0]), bills[1] + calcTip(bills[1]), bills[bills.length - 1] + calcTip(bills[bills.length - 1])]
+console.log(totals);
+
+// JONAS WAY
+const calcTip1 = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * .15 : bill * .2;
+}
+
+const totals1 = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(totals1)
+
+// const calcTip2 = bill => bill >= 50 && bill <= 300 ? bill * .15 : bill * .2;
+
 */

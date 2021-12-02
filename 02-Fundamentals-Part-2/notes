@@ -28,3 +28,19 @@ Functions -
   - curly braces are optional depending on length of code block within function 
   - helpful for writing short one line functions. (dont need return here)
   - arrow functions do not get the this keyword.
+
+Arrays (line 87)
+- zero based.
+- call items in array with []
+- can mutate arrays within const variable
+- can hold different kinds of data types
+- can use function calls within array
+
+- Methods - functions used to mutate arrays (line 117)
+  - .push() - adds item to END of array. returns length of array. shorthand is friends[3]. assuming 3 would be the last index if once value is added
+  - .unshift() - adds item to BEGINNING of array. returns length of array
+  - .pop() - removes last item in array. returns item removed
+  - .shift() - removes first item in array. returns item removed
+  - .length() - calculates how many values inside of an array. not zero based
+  - .indexOf() - returns the index of specified value. -1 is returned when value is not present in the array
+  - .includes() - returns true or false. sees whether value is inside the array. uses strict equality operator
