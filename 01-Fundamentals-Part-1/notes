@@ -41,6 +41,7 @@ Naming
 Data Types
  - every value is either an object or a primitive
   - a primitive is everything but an object
+  - primitives are immutable
  - 7 Primitive Data Types
     1. Number
     2. Strings - sequence of characters. wrapped in single or double quotes
@@ -135,7 +136,7 @@ Truthy vs Falsy
   - this has precedence over and/or operators. 
   - not will invert the boolean before running any and/or operators that may be along with it
   Ex: a = false, b = true
-      !a and b = true 
+      !a && b = true 
 
 Switch statements (script.js line 115)
 - a different way of running if/else statements
