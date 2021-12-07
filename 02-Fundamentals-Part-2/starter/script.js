@@ -131,4 +131,80 @@ if (friends.includes('Peter')) console.log('Peter is here');
 
 console.log(friends);
 
+// OBJECTS
+
+const ricky = {
+  firstName: 'Ricky',
+  lastName: 'Aguayo',
+  age: 2037 - 1992,
+  job: 'developer',
+  friends: ['Michael', 'Peter', 'Steven']
+};
+
+console.log(ricky.lastName); // dot notation
+console.log(ricky['lastName']); // bracket notation
+
+const nameKey = 'Name';
+console.log(ricky['first' + nameKey]);
+console.log(ricky['last' + nameKey]);
+
+// const interestedIn = prompt('What do you want to know? firstName, lastName, age, job, friends?')
+
+// if (ricky[interestedIn]) {
+//   console.log(ricky[interestedIn]);
+// } else {
+//   console.log('Wrong request! What do you want to know? firstName, lastName, age, job, friends?')
+// }
+
+// adding to object
+ricky.location = 'Dallas';
+ricky['instagram'] = '@p1ckle_r1cky';
+
+console.log(`${ricky.firstName} has ${ricky.friends.length} friends, and his best friend is called ${ricky.friends[0]}.`);
+
+const ricky = {
+  firstName: 'Ricky',
+  lastName: 'Aguayo',
+  birthYear: 1992,
+  job: 'developer',
+  friends: ['Michael', 'Peter', 'Steven'],
+  hasDriversLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // }
+
+  // calcAge: function () {
+  //   return 2037 - this.birthYear;
+  // }
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  // MY WAY
+  // getSummary: function () {
+  //   if (this.hasDriversLicense) {
+  //     console.log(`${this.firstName} is a ${this.calcAge()}-year old ${this.job} and he has a driver's license`)
+  //   } else {
+  //     console.log(`${this.firstName} is a ${this.calcAge()}-year old ${this.job} and he has no driver's license`)
+  //   }
+  // }
+
+  // JONAS WAY
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${this.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+  }
+};
+
+// console.log(ricky.calcAge())
+console.log(ricky.getSummary());
+// console.log(ricky['calcAge'](1992));
+
+// the function in the object is the same as this
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// } 
+
 */

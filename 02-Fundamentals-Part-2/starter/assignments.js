@@ -66,3 +66,35 @@ console.log(totals1)
 // const calcTip2 = bill => bill >= 50 && bill <= 300 ? bill * .15 : bill * .2;
 
 */
+
+// CODING CHALLENGE #3
+
+const mark = {
+  firstName: 'Mark',
+  lastName: 'Miller',
+  mass: 78,
+  height: 1.69,
+
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height ** 2);
+    return this.bmi;
+  }
+}
+
+const john = {
+  firstName: 'John',
+  lastName: 'Smith',
+  mass: 92,
+  height: 1.95,
+
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height ** 2);
+    return this.bmi;
+  }
+}
+
+if (mark.calcBMI() > john.calcBMI()) {
+  console.log(`${mark.firstName} ${mark.lastName}'s BMI (${mark.calcBMI()}) is higher than ${john.firstName} ${john.lastName}'s BMI (${john.calcBMI()})`)
+} else {
+  console.log(`${john.firstName} ${john.lastName}'s BMI (${john.calcBMI()}) is higher than ${mark.firstName} ${mark.lastName}'s BMI (${mark.calcBMI()})`)
+}
