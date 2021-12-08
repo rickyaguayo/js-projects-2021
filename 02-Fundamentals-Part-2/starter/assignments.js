@@ -65,8 +65,6 @@ console.log(totals1)
 
 // const calcTip2 = bill => bill >= 50 && bill <= 300 ? bill * .15 : bill * .2;
 
-*/
-
 // CODING CHALLENGE #3
 
 const mark = {
@@ -98,3 +96,64 @@ if (mark.calcBMI() > john.calcBMI()) {
 } else {
   console.log(`${john.firstName} ${john.lastName}'s BMI (${john.calcBMI()}) is higher than ${mark.firstName} ${mark.lastName}'s BMI (${mark.calcBMI()})`)
 }
+
+// CODING CHALLENGE #4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * .15 : bill * .2;
+}
+// console.log(bills);
+
+// MY WAY
+// for (let i = 0; i < bills.length; i++) {
+//   tips.push(calcTip(bills[i]));
+//   totals.push(tips[i] + bills[i]);
+
+//   if (i === bills.length - 1) {
+//     console.log(tips);
+//     console.log(totals);
+//   }
+// }
+
+// const calcAvg = function (arr) {
+//   let sum = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+
+//     if (i === arr.length - 1) {
+//       // console.log(sum)
+//       console.log(sum / arr.length);
+//     }
+//   }
+// }
+
+// console.log(calcAvg(totals));
+
+// JONAS WAY
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
+}
+
+console.log(bills)
+console.log(tips)
+console.log(totals)
+
+const calcAvg = function (arr) {
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+}
+
+console.log(calcAvg(totals))
+
+*/

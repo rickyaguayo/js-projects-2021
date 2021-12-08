@@ -55,7 +55,31 @@ Objects - key value pairing (line 134)
 - function inside an object must be an expression not a declaration
 
 - dot notation. operator that calls a certain property from an object. 
-ricky.job = 'developer
+ricky.job = 'developer'
 - bracket notation allows you to add an expression 
   - useful when something needs to be computed before running
 
+Loops - (line 210)
+- controlled structure
+- automates repetitive ta sks
+- continue - exit the current iteration and continue to the next
+- break - jumps out of loop completely
+
+- For Loops
+  - keeps running while condition is true
+  - has 3 parts to the beginning 
+    1. counter - the variable that is the starting point
+    2. logical condition that is evaluated before each iteration of the loop 
+    3. how the counter is modified after each iteration
+
+- While Loops (line 276)
+  - can only needs the condition
+  - still needs the counter and the increment, but needs to be explicitly defined outside the loop
+  - this allows more versatility than a for loop
+  - helpful when we dont know how many times the loops needs to be run
+
+- Math.random() gives random number between 0 and 1. can be 0 but never will be 1. Ex: .984223
+- Math.trunc() cuts off any decimal or fraction. (no rounding) 4.875 -> 4
+- Math.floor() rounds down any number 5.983 -> 5
+- Math.ceil() rounds up any number 9.07 -> 10
+- Math.round() rounds to the nearest integer 5.75 -> 6 5.25 -> 5

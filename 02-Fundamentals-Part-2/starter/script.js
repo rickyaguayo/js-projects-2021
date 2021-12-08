@@ -207,4 +207,95 @@ console.log(ricky.getSummary());
 //   return 2037 - birthYear;
 // } 
 
+// FOR LOOPS
+
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lift weights. Rep ${rep}`);
+// }
+
+const ricky = [
+  'Ricky',
+  'Aguayo',
+  2037 - 1992,
+  'developer',
+  ['Michael', 'Peter', 'Steven']
+];
+
+const types = [];
+
+for (let i = 0; i < ricky.length; i++) {
+  // reading from ricky array
+  console.log(ricky[i], typeof ricky[i]);
+
+  // filling an array
+  // types[i] = typeof ricky[i];
+  types.push(typeof ricky[i]);
+}
+
+console.log(types);
+
+const years = [1992, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+for (let i = 0; i < ricky.length; i++) {
+  if (typeof ricky[i] !== 'string') continue;
+
+  console.log(ricky[i], typeof ricky[i]);
+};
+
+for (let i = 0; i < ricky.length; i++) {
+  if (typeof ricky[i] === 'number') break;
+
+  console.log(ricky[i], typeof ricky[i]);
+};
+
+const ricky = [
+  'Ricky',
+  'Aguayo',
+  2037 - 1992,
+  'developer',
+  ['Michael', 'Peter', 'Steven']
+];
+
+for (let i = ricky.length - 1; i >= 0; i--) {
+  console.log(ricky[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`--starting exercise ${exercise}--`);
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: lifting weights rep ${rep}`);
+  }
+}
+
+// WHILE LOOPS
+
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lift weights. Rep ${rep}`);
+// }
+
+// let rep = 1;
+// while (rep <= 10) {
+//   console.log(`Lift weights. Rep ${rep}`);
+//   rep++;
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1
+// can also be written as Math.ceil(Math.random() * 6)
+// console.log(dice)
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1
+
+  if (dice === 6) {
+    console.log('You rolled a 6!')
+  }
+}
+
 */
