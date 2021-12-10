@@ -1,0 +1,30 @@
+- Most code is synchronous which is code that is executed line by line
+- each line of code waits for previous line to finish.
+  - this can be an issue if a line of code takes a long time to finish executing. Like alert() which blocks code execution until the alert pop up is dismissed
+- Asynchronous code -
+  - executed after a task that runs in the background finishes
+  - non-blocking
+  - execution doesnt wait for an asynchronous task to finish
+  - all about coordinating the behavior of the program over a certain period of time
+
+- AJAX - Asynchronous Javascript And XML
+  - allows us to communicate with remote web servers in an asynchronous way. With AJAX calls, we can request data from web servers dynamically
+  - XML is not used much now. Most people use JSON as the API data format now
+- API - Application Programming Interface
+  - self contained piece of software that can be used by another piece of software, in order to allow application to talk to each other
+  - Online API - application running on a server that receives requests for data and sends data back as response
+  -CORS - cross origin resource sharing. without this, we cannot access the API in our code
+
+Promise - object thats is used as a placeholder for the future result of an asynchronous operation.
+  - less formal def: container for an asynchronous delivered value
+  - even less formal def: container for a future value (future value being a response from an AJAX call)
+  - with promises, we no longer need to rely on events and callbacks passed into asynchronous functions to handle asynchronous results
+  - instead of nesting callbacks, we can chain promises for a sequence of asynchronous operations
+- Promise Lifecycle - 
+  Pending - before the future value is available
+  Async Task runs
+  Settled - Async task is finished running (promises are only settled once)
+    Fulfilled - the value is now available
+    OR 
+    Rejected - an error happened
+- Consume Promise - when we already have a promise. Like when a promise is returned from an API
