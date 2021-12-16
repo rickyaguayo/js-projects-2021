@@ -29,7 +29,7 @@ x += 10; // x = x + 10
 x++;
 console.log(x);
 
-// comparison operators- used to create boolean values
+// comparison operators - used to create boolean values
 console.log(ageRicky < ageMonica) // <, >, <=, >=
 console.log(ageMonica >= 18)
 

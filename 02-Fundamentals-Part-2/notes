@@ -73,7 +73,7 @@ Loops - (line 210)
     3. how the counter is modified after each iteration
 
 - While Loops (line 276)
-  - can only needs the condition
+  - can only use the condition
   - still needs the counter and the increment, but needs to be explicitly defined outside the loop
   - this allows more versatility than a for loop
   - helpful when we dont know how many times the loops needs to be run
@@ -82,4 +82,4 @@ Loops - (line 210)
 - Math.trunc() cuts off any decimal or fraction. (no rounding) 4.875 -> 4
 - Math.floor() rounds down any number 5.983 -> 5
 - Math.ceil() rounds up any number 9.07 -> 10
-- Math.round() rounds to the nearest integer 5.75 -> 6 5.25 -> 5
+- Math.round() rounds to the nearest integer 5.75 -> 6, 5.25 -> 5
