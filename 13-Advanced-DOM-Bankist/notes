@@ -1,0 +1,29 @@
+HTMLcollection - different from a node list. is live and changes as the DOM changes
+
+.insertAdjacentHTML(postition, text) - inserts HTML in a certain spot
+- 4 positions:
+  1. beforebegin - before the element itself
+  2. afterbegin - inside the element, before the first child
+  3. beforeend - inside the element, after the last child
+  4. afterend - after the element itself
+
+.prepend() - adds element to beginning of desired element
+.append() - adds element to end of desired element
+
+.before() - inserts element before as a sibling
+.after() - inserts element after as a sibling
+
+getComputedStyle(element) - gets all css style that is declared when loaded
+  - adding specific styles: getComputedStyle(element).color
+.element.style.width will only return a value if it is inline and was defined by js beforehand 
+
+getBoundingClientRect() - gets coordinates of an element
+  - coordinates include: x, y, width, height, top, right, left, bottom
+
+window.pageXOffset - returns where you are on the page in relation to the x axis in pixels
+window.pageYOffset - returns where you are on the page in relation to the y axis in pixels
+
+capturing phase - when and event happens, it starts at the document level, passes through every parent element until it reaches its target
+target phase - where events are handled at the target
+bubbling phase - event travels from where it happened back up to the document level
+propagation - how events travel through the DOM tree
