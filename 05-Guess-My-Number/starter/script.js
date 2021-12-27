@@ -14,11 +14,13 @@ let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
 
+const check = document.querySelector('.check');
+
 const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
 
-document.querySelector('.check').addEventListener('click', function () {
+const checkGuess = function () {
   const guess = Number(document.querySelector('.guess').value);
 
   // NO INPUT
@@ -48,6 +50,13 @@ document.querySelector('.check').addEventListener('click', function () {
       displayMessage('💥 You lost the game!');
       document.querySelector('.score').textContent = 0;
     }
+  }
+};
+
+check.addEventListener('click', checkGuess);
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    checkGuess();
   }
 });
 
