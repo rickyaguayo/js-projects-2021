@@ -1,0 +1,16 @@
+.querySelector only selects the first instance if there are multiple classes with the same name.
+.querySelectorAll selects all and puts them in a NodeList
+Node list - like an array
+
+for loops can have curly braces omitted, like an if statement, if you only have one line
+
+.classList gives you options on what to do with the classes of an element. add, remove, etc. multiple classes can be listed with commas
+  - dont use the dot to signify classes 
+    - modal.classList.remove('hidden') <-- correct
+    - modal.classList.remove('.hidden') <-- not correct
+
+keyboard events are considered global events because they dont happen on one certain element.
+keyboard events usually listen on the whole document
+
+when and event is handled, JS creates an object that we can analyze to better understand what is going on
+  - can do this by console logging the argument of the function
