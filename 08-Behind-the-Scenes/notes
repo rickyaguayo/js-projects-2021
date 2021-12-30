@@ -5,7 +5,7 @@ Javascript -
 - Multi-paradigm - 
   - Paradigm - approach and mindset of structuring code. Directs coding style/technique. JS has 3.
     1. Procedural programming - organzing code in a linear way with a few functions in between
-    2 . Object Oriented Programming (OOP)
+    2. Object Oriented Programming (OOP)
     3. Functional Programming (FP)
   - Imperative vs Declarative
     - Imperative - tells computer how to do things. Procedural and OOP
@@ -38,10 +38,11 @@ Compilation vs Interpretation
       - machine code is executed in CPU and ran (can happen way after compilation)
   - Interpretation - interpreter runs through the source code and executes it line by line
     - Only 1 step:
-      - source code -> run program.
-      - converts to machine code right before execution.
+      - source code -> run program. read and executed all at the same time
+      - converts to machine code right before execution. not ahead of time
       - much slower. JS was like this but is no longer
-  - Just in time compilation - a combination of compilation and Interpretation. 
+  - Just-in-time (JIT) compilation - a combination of compilation and Interpretation. 
+    - Entire code is converted into machince code at onces. then executed immediately.
     - still takes the 2 steps of compilation, but it isnt stored in a portable file and is executed immediately after compilation
 
 JS Runtime - container including all the things that we need to use JS
